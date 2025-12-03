@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+/* Global smooth behaviors */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+input, textarea {
+  user-select: text;
+  -webkit-user-select: text;
+}
+
+:root {
+  --ease-standard: cubic-bezier(0.22, 1, 0.36, 1);
+  --shadow-soft: 0 10px 30px -10px rgb(14 165 233 / 0.25);
+}
+
+/* Base transitions for interactive elements */
+button,
+a,
+.interactive,
+.card,
+input,
+textarea,
+select {
+  transition: all 300ms var(--ease-standard);
+}
+
+/* Subtle hover lift effect */
+.hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-soft);
+}
+
+/* Focus ring for accessibility */
+:where(button, a, input, textarea, select):focus-visible {
+  outline: 2px solid rgb(34 211 238);
+  outline-offset: 2px;
+}
+
+/* Stagger helper (can be used with inline style delays) */
+[data-animate] {
+  will-change: transform, opacity;
+}
+
+/* Gentle floating animation for decorative elements */
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.float {
+  animation: float 6s ease-in-out infinite;
+}

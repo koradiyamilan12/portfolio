@@ -1,0 +1,6 @@
+# Allow all crawlers to access the site
+User-agent: *
+Allow: /
+
+# Add your production sitemap URL if available
+# Sitemap: https://your-domain.example/sitemap.xml
