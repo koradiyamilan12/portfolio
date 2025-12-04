@@ -1,10 +1,9 @@
 import { Menu, X, Sun, Moon, Download } from "../../utils/icons";
 import { sections } from "../../data";
+import { useTheme } from "../../context/ThemeContext";
 
 const Navbar = ({
   theme,
-  darkMode,
-  setDarkMode,
   isMenuOpen,
   setIsMenuOpen,
   activeSection,
@@ -12,6 +11,8 @@ const Navbar = ({
   isNavHidden,
 }) => {
   const shouldHideNav = isNavHidden && !isMenuOpen;
+  const { theme: themeString, toggleTheme } = useTheme();
+  const darkMode = themeString === "dark";
 
   return (
     <nav
@@ -30,7 +31,7 @@ const Navbar = ({
             {/* Left: Logo / home button */}
             <button
               type="button"
-              className="cursor-pointer text-2xl font-bold bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent"
+              className="cursor-pointer text-2xl font-bold bg-linear-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent"
               onClick={() => scrollToSection("home")}
             >
               Milan Koradiya
@@ -50,7 +51,7 @@ const Navbar = ({
                 >
                   {item}
                   {activeSection === item && (
-                    <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-16 h-0.5 rounded-full bg-gradient-to-r from-purple-400 to-cyan-400"></div>
+                    <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-16 h-0.5 rounded-full bg-linear-to-r from-purple-400 to-cyan-400"></div>
                   )}
                 </button>
               ))}
@@ -59,7 +60,7 @@ const Navbar = ({
             {/* Right: actions */}
             <div className="hidden md:flex items-center gap-4">
               <button
-                onClick={() => setDarkMode(!darkMode)}
+                onClick={toggleTheme}
                 className={`cursor-pointer p-2 ${theme.cardBg} ${theme.border} border rounded-full ${theme.hover} transition-all duration-300`}
                 aria-label={
                   darkMode ? "Switch to light mode" : "Switch to dark mode"
@@ -76,7 +77,7 @@ const Navbar = ({
               <a
                 href="/cv.pdf"
                 download
-                className="cursor-pointer px-5 py-2 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-full font-semibold hover:scale-105 transition-transform duration-300 shadow-lg flex items-center gap-2"
+                className="cursor-pointer px-5 py-2 bg-linear-to-r from-purple-500 to-cyan-500 rounded-full font-semibold hover:scale-105 transition-transform duration-300 shadow-lg flex items-center gap-2"
                 aria-label="Download CV"
               >
                 <Download className="w-4 h-4" />
@@ -87,7 +88,7 @@ const Navbar = ({
             {/* Mobile controls (right) */}
             <div className="md:hidden flex items-center gap-3">
               <button
-                onClick={() => setDarkMode(!darkMode)}
+                onClick={toggleTheme}
                 className={`p-2 ${theme.cardBg} ${theme.border} border rounded-full`}
                 aria-label={
                   darkMode ? "Switch to light mode" : "Switch to dark mode"
@@ -144,7 +145,7 @@ const Navbar = ({
                 <a
                   href="/cv.pdf"
                   download
-                  className="flex-1 text-center px-4 py-2 rounded-full bg-gradient-to-r from-purple-500 to-cyan-500 font-semibold"
+                  className="flex-1 text-center px-4 py-2 rounded-full bg-linear-to-r from-purple-500 to-cyan-500 font-semibold"
                 >
                   Download CV
                 </a>
