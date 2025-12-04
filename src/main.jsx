@@ -6,6 +6,12 @@ import { inject } from '@vercel/analytics';
 import { ThemeProvider } from "./context/ThemeContext.jsx";
 
 inject();
+import { injectSpeedInsights } from "@vercel/speed-insights";
+
+import { ThemeProvider } from "./context/ThemeContext.jsx";
+
+// Inject Vercel Speed Insights
+injectSpeedInsights();
 
 console.log(
   "%c👋 Welcome to My Portfolio!",
