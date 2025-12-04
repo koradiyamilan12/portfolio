@@ -1,8 +1,12 @@
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.jsx";
+import { injectSpeedInsights } from "@vercel/speed-insights";
 
 import { ThemeProvider } from "./context/ThemeContext.jsx";
+
+// Inject Vercel Speed Insights
+injectSpeedInsights();
 
 console.log(
   "%c👋 Welcome to My Portfolio!",
