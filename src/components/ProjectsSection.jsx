@@ -68,14 +68,36 @@ const ProjectsSection = ({ theme, projects, isVisible }) => {
                   ))}
                 </div>
                 <div className="flex gap-4">
-                  <button className="cursor-pointer flex-1 py-2 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-lg font-semibold hover:scale-105 transition-transform duration-300">
-                    Live Demo
-                  </button>
-                  <button
-                    className={`cursor-pointer flex-1 py-2 ${theme.border} border rounded-lg font-semibold ${theme.hover} transition-all duration-300`}
-                  >
-                    Code
-                  </button>
+                  {project.liveLink ? (
+                    <a
+                      href={project.liveLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="cursor-pointer flex-1 py-2 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-lg font-semibold hover:scale-105 transition-transform duration-300 text-center"
+                    >
+                      Live Demo
+                    </a>
+                  ) : (
+                    <button className="cursor-pointer flex-1 py-2 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-lg font-semibold hover:scale-105 transition-transform duration-300">
+                      Live Demo
+                    </button>
+                  )}
+                  {project.link ? (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`cursor-pointer flex-1 py-2 ${theme.border} border rounded-lg font-semibold ${theme.hover} transition-all duration-300 text-center`}
+                    >
+                      Code
+                    </a>
+                  ) : (
+                    <button
+                      className={`cursor-pointer flex-1 py-2 ${theme.border} border rounded-lg font-semibold ${theme.hover} transition-all duration-300`}
+                    >
+                      Code
+                    </button>
+                  )}
                 </div>
               </div>
             </div>
