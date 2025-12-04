@@ -22,11 +22,14 @@ import {
 } from "../data";
 import { getTheme } from "../utils/theme.js";
 
+import { useTheme } from "../context/ThemeContext";
+
 const Homepage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrollY, setScrollY] = useState(0);
   const [activeSection, setActiveSection] = useState("home");
-  const [darkMode, setDarkMode] = useState(true);
+  const { theme: themeString } = useTheme();
+  const darkMode = themeString === "dark";
   const [showScrollTop, setShowScrollTop] = useState(false);
 
   const [isVisible, setIsVisible] = useState({});
@@ -124,7 +127,7 @@ const Homepage = () => {
     >
       <div className="fixed inset-0 z-0">
         <div
-          className={`absolute inset-0 bg-gradient-to-br ${theme.gradient1} via-transparent ${theme.gradient2} transition-colors duration-500`}
+          className={`absolute inset-0 bg-linear-to-br ${theme.gradient1} via-transparent ${theme.gradient2} transition-colors duration-500`}
         ></div>
         <div
           className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl transition-all duration-500"
@@ -142,8 +145,6 @@ const Homepage = () => {
 
       <Navbar
         theme={theme}
-        darkMode={darkMode}
-        setDarkMode={setDarkMode}
         isMenuOpen={isMenuOpen}
         setIsMenuOpen={setIsMenuOpen}
         activeSection={activeSection}
@@ -182,7 +183,7 @@ const Homepage = () => {
       {showScrollTop && (
         <button
           onClick={scrollToTop}
-          className="cursor-pointer fixed bottom-8 right-8 p-4 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-full shadow-lg hover:scale-110 transition-all duration-300 z-50"
+          className="cursor-pointer fixed bottom-8 right-8 p-4 bg-linear-to-r from-purple-500 to-cyan-500 rounded-full shadow-lg hover:scale-110 transition-all duration-300 z-50"
           aria-label="Scroll to top"
         >
           <ArrowUp className="w-6 h-6" aria-hidden="true" />
