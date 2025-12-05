@@ -11,7 +11,7 @@ export const projects = [
   {
     title: "Role-Based Post Management Web App",
     desc: "A modern, responsive React application featuring role-based authentication, post management with CRUD operations, and localStorage persistence. Admins can create, edit, and delete posts, while users can explore content from JSONPlaceholder API with real-time search and filtering capabilities.",
-    tech: ["React", "CSS", "localStorage", "JSONPlaceholder API", "Role-Based Auth"],
+    tech: ["React", "CSS", "localStorage", "JSONPlaceholder API", "Role-Based Auth", "web-app", "responsive-design"],
     gradient: "from-cyan-500 to-blue-500",
     stars: 0,
     link: "https://github.com/koradiyamilan12/role-based-post-management",
@@ -20,17 +20,19 @@ export const projects = [
   {
     title: "Expense Tracker",
     desc: "A modern expense tracking application built with React and Redux Toolkit. Features advanced filtering, interactive charts with ApexCharts, light/dark theme support, user authentication, pagination, and responsive design. Includes form validation with Formik & Yup, and performance optimizations with lazy loading and memoization.",
-    tech: ["React", "Redux Toolkit", "ApexCharts", "Formik", "Yup", "Axios", "Vite"],
+    tech: ["React", "css", "api-integration", "Redux Toolkit", "ApexCharts", "Formik", "Yup", "Axios", "Vite", "responsive-design"],
     gradient: "from-orange-500 to-red-500",
     stars: 0,
     link: "https://github.com/koradiyamilan12/expense_tracker",
     liveLink: "https://expense-tracker-kappa-sandy.vercel.app/",
   },
   {
-    title: "Project 4",
-    desc: "Project 4 description",
-    tech: ["React", "Node.js", "Express", "MongoDB"],
-    gradient: "from-green-500 to-blue-500",
+    title: "Todo App",
+    desc: "A modern, feature-rich Todo Application built with React and Vite. Includes user authentication, task management with detailed views, dark/light mode toggle, responsive design, and protected routes. Seamless navigation powered by React Router v6 with a clean and accessible interface.",
+    tech: ["React", "Vite", "React Router", "React Icons", "CSS Modules", "UUID", "React Spinners", "Authentication", "Dark Mode"],
+    gradient: "from-green-500 to-teal-500",
     stars: 0,
+    link: "https://github.com/koradiyamilan12/todoapp",
+    liveLink: "https://todoapp-jet-tau.vercel.app/",
   },
 ];
