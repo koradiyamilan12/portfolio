@@ -1,12 +1,17 @@
 @import "tailwindcss";
 @variant dark (&:where(.dark, .dark *));
 
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
 /* Global smooth behaviors */
 html {
   scroll-behavior: smooth;
 }
 
 body {
+  font-family: var(--font-sans);
   user-select: none;
   -webkit-user-select: none;
 }

@@ -15,5 +15,10 @@ export const socialLinks = [
     iconKey: 'mail',
     href: `mailto:${site.email}`,
     label: 'Send email'
+  },
+  {
+    iconKey: 'twitter',
+    href: site.twitter,
+    label: 'Twitter profile'
   }
 ];

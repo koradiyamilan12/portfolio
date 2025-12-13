@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, ChevronDown } from "../utils/icons";
+import { Github, Linkedin, Mail, ChevronDown, Twitter } from "../utils/icons";
 import { Link } from "react-router-dom";
 
 const HeroSection = ({ theme, scrollY, scrollToSection }) => {
@@ -71,6 +71,12 @@ const HeroSection = ({ theme, scrollY, scrollToSection }) => {
                 href: "https://mail.google.com/mail/?view=cm&fs=1&to=milankoradiya.work@gmail.com",
                 target: "_blank",
                 label: "Send email",
+              },
+              {
+                icon: <Twitter className="w-6 h-6" />,
+                href: "https://x.com/milankoradiya9",
+                target: "_blank",
+                label: "Twitter profile",
               },
             ].map((social, idx) => (
               <Link

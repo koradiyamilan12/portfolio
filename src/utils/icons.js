@@ -13,6 +13,7 @@ import {
   Download,
   Copyright,
   ArrowUp,
+  Twitter,
 } from 'lucide-react';
 
 // Named exports: import only what you need from `src/utils/icons.js`.
@@ -30,12 +31,14 @@ export {
   Download,
   Copyright,
   ArrowUp,
+  Twitter,
 };
 
 const components = {
   mail: Mail,
   github: Github,
   linkedin: Linkedin,
+  twitter: Twitter,
 };
 
 export const renderIcon = (key, sizeClass = 'w-5 h-5') => {

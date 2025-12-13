@@ -16,4 +16,9 @@ export const contactItems = [
     label: 'LinkedIn',
     value: site.linkedin
   },
+  {
+    iconKey: 'twitter',
+    label: 'Twitter',
+    value: site.twitter
+  },
 ];
