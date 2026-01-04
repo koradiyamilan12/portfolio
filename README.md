@@ -35,4 +35,4 @@ If you want to run this locally, just follow these steps:
    npm run dev
    ```
 
-That's it! Open your browser and check it out. Thanks for visiting! 🚀
+Thanks for visiting! 🚀
