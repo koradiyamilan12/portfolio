@@ -1,6 +1,6 @@
 import { IconType } from "react-icons/lib";
 import {
-  SiAppwrite,
+  SiChatbot,
   SiCss3,
   SiDocker,
   SiExpress,
@@ -12,7 +12,6 @@ import {
   SiMongodb,
   SiMongoose,
   SiMysql,
-  SiNextdotjs,
   SiNodedotjs,
   SiPostgresql,
   SiPrisma,
@@ -20,8 +19,6 @@ import {
   SiRedis,
   SiRedux,
   SiSequelize,
-  SiShadcnui,
-  SiSupabase,
   SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
@@ -185,8 +182,8 @@ export const skillsIconInfo: SkillIconInfoType = [
   {
     name: "chatgpt",
     label: "Chatgpt",
+    icon: SiChatbot,
     link: "https://chatgpt.com/",
-    image: "/iconsImage/chatgpt.png",
   },
   {
     name: "gemini",
