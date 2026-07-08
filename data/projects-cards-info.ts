@@ -14,9 +14,10 @@ export type ProjectsCardInfoType = {
 export const projectsCardInfo: ProjectsCardInfoType[] = [
   {
     id: 1,
-    title: "Project Title",
-    name: "Project Name",
-    description: "Project Description",
+    title: "Dummy Project One",
+    name: "dummy-project-one",
+    description:
+      "Sample project card content used for testing the portfolio layout.",
 
     image: project,
     technologies: ["nextjs", "typescript", "tailwind", "firebase", "shadcn"],
@@ -27,15 +28,16 @@ export const projectsCardInfo: ProjectsCardInfoType[] = [
       },
       {
         label: "Github",
-        link: "",
+        link: "#",
       },
     ],
   },
   {
     id: 2,
-    title: "Project Title",
-    name: "Project Name",
-    description: "Project Description",
+    title: "Dummy Project Two",
+    name: "dummy-project-two",
+    description:
+      "Another placeholder entry for testing the project details experience.",
     image: project,
     technologies: [
       "nextjs",

@@ -131,7 +131,7 @@ export const skillsIconInfo: SkillIconInfoType = [
     icon: SiExpress,
     // color: "#000000",
     link: "https://expressjs.com/",
-    aliases: ["expressjs"],
+    aliases: ["expressjs", "express"],
   },
   {
     name: "MongoDB",

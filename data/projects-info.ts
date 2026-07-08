@@ -18,43 +18,35 @@ export type ProjectsInfoType = {
 export const projectInfos: ProjectsInfoType[] = [
   {
     id: 1,
-    title: "Project Title",
-    name: "Project Name",
-    bio: "Resume AI: Enhance resumes using AI",
+    title: "Dummy Project One",
+    name: "dummy-project-one",
+    bio: "Test data placeholder for a sample project detail page.",
     projectMeta: {
-      Timeline: "25 days",
-      Role: "Full Stack",
-      Team: "Solo",
-      Status: "Completed",
+      Timeline: "TBD",
+      Role: "Sample Role",
+      Team: "Test Team",
+      Status: "Draft",
     },
 
     description:
-      "An AI-powered resume builder that analyzes content, improves clarity, and provides ATS-friendly scoring with real-time feedback.",
+      "This is dummy test content created for UI preview purposes only. It does not represent a real project.",
     image: project,
 
     overview: {
-      "Why I Built This": [
-        "Enhance existing resumes instead of generating generic ones.",
-        "Use AI in a practical, real-world scenario.",
-        "Gain hands-on experience with AI integration.",
-        "Strengthen skills in Next.js, TypeScript, Tailwind CSS, and Supabase.",
+      "Why This Exists": [
+        "Show how the project detail page looks with sample content.",
+        "Test layout spacing and section rendering.",
+        "Keep the page visually complete without real project data.",
       ],
       Features: [
-        "Secure authentication",
-        "AI-powered resume analysis",
-        "ATS score evaluation",
-        "Resume management",
-        "Resume history tracking",
-        "Voice-based feedback",
+        "Sample feature list",
+        "Placeholder timeline",
+        "Mock technology badges",
+        "Test CTA buttons",
       ],
-      Technologies: [
-        "Next.js",
-        "TypeScript",
-        "Tailwind",
-        "Supabase",
-        "Gemini",
-        "React Hook Form",
-        "Shadcn/Ui",
+      "Sample Notes": [
+        "This content is intentionally fictional.",
+        "Replace it later with real project details.",
       ],
     },
     socialLinks: {
@@ -64,53 +56,45 @@ export const projectInfos: ProjectsInfoType[] = [
   },
   {
     id: 2,
-    title: "Tripping App",
-    name: "tripping",
-    bio: "Smart trip planner with drag-and-drop timeline and map visualization",
+    title: "Dummy Project Two",
+    name: "dummy-project-two",
+    bio: "Another example of placeholder test data for project pages.",
 
     projectMeta: {
-      Timeline: "60 days",
-      Role: "Full Stack",
-      Team: "3 Members",
-      Status: "Completed",
+      Timeline: "TBD",
+      Role: "Sample Role",
+      Team: "Test Team",
+      Status: "Draft",
     },
 
     description:
-      "An interactive trip planning application that allows users to organize their travel itinerary using a drag-and-drop timeline, visualize routes on a map, and manage activities efficiently with real-time updates and transport integration.",
+      "This is additional dummy data used to verify the detail view. It is not tied to any actual product or service.",
 
     image: project,
 
     overview: {
-      "Why I Built This": [
-        "Solve real-world problem of messy trip planning and scattered information.",
-        "Build an intuitive drag-and-drop based UI for better user experience.",
-        "Work deeply with maps, routes, and geolocation-based features.",
-        "Strengthen frontend architecture and state management skills.",
-        "Handle complex UI interactions and real-time updates.",
+      "Why This Exists": [
+        "Validate the project detail UI with a second example.",
+        "Check how multiple sections appear on the page.",
+        "Keep the portfolio demo functional without real project info.",
       ],
 
       Features: [
-        "Drag & drop activities between timeline and activity panel",
-        "Day-wise timeline planning with automatic time adjustments",
-        "Transport integration between activities",
-        "Dynamic route visualization on map",
-        "Distance & duration calculation between locations",
+        "Mock planning flow",
+        "Sample collaboration notes",
+        "Placeholder results section",
       ],
       Challenges: [
-        "Building a custom calendar view and aligning activities day by day was challenging",
-        "Handling API integration for fetching distance and route data between locations",
-        "Managing complex drag-and-drop interactions across multiple sections (timeline, activities, transport)",
-        "Handling map issues when displaying both markers and routes together",
+        "Testing how bullet lists look in the overview area",
+        "Checking section headings and spacing",
       ],
 
       Technologies: [
         "Next.js",
         "TypeScript",
         "Tailwind CSS",
-        "Google Maps API",
-        "@dnd-kit",
-        "Firebase",
-        "Shadcn/UI",
+        "Sample API",
+        "Dummy Library",
       ],
     },
 

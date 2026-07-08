@@ -8,6 +8,7 @@ const DATA = [
   { href: "/", label: "Home" },
   { href: "/work", label: "Work" },
   { href: "/resume", label: "Resume" },
+  { href: "/contact", label: "Contact" },
 ];
 
 const Navbar = () => {

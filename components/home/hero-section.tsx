@@ -29,12 +29,12 @@ export default function HeroSection() {
       </div>
       <Separator />
 
-      <p className="text-muted-foreground line text-lg leading-9 tracking-wide">
-        Frontend developer working with <TechBadge tech="react" />,{" "}
-        <TechBadge tech="nextjs" />, and <TechBadge tech="typescript" /> to
-        build modern, responsive web applications, using{" "}
-        <TechBadge tech="tailwind" /> and <TechBadge tech="shadcn" /> for clean
-        and consistent UI.
+      <p className="text-muted-foreground text-lg leading-9 tracking-wide">
+        Backend-focused Full Stack Developer who enjoys building secure,
+        scalable, and reliable web applications with <TechBadge tech="nodejs" />
+        , <TechBadge tech="express" />, <TechBadge tech="mongodb" />, and{" "}
+        <TechBadge tech="postgresql" />, while creating responsive user
+        interfaces with <TechBadge tech="react" />.
       </p>
 
       <div>
