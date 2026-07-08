@@ -1,6 +1,5 @@
 import { IconType } from "react-icons/lib";
 import {
-  SiChatbot,
   SiCss3,
   SiDocker,
   SiExpress,
@@ -15,10 +14,12 @@ import {
   SiNodedotjs,
   SiPostgresql,
   SiPrisma,
+  SiRabbitmq,
   SiReact,
   SiRedis,
   SiRedux,
   SiSequelize,
+  SiSwagger,
   SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
@@ -30,7 +31,28 @@ type SkillIconInfoType = {
   icon?: IconType;
   link: string;
   image?: string;
+  aliases?: string[];
 }[];
+
+export const normalizeSkillName = (value: string) =>
+  value.toLowerCase().replace(/[^a-z0-9]+/g, "");
+
+export const isSkillMatch = (
+  skillInfo: SkillIconInfoType[number],
+  techName: string,
+) => {
+  const normalizedInput = normalizeSkillName(techName);
+  const normalizedName = normalizeSkillName(skillInfo.name);
+  const normalizedAliases = (skillInfo.aliases ?? []).map(normalizeSkillName);
+
+  return (
+    normalizedName === normalizedInput ||
+    normalizedAliases.includes(normalizedInput)
+  );
+};
+
+export const getSkillIconInfo = (techName: string) =>
+  skillsIconInfo.find((skillInfo) => isSkillMatch(skillInfo, techName));
 
 export const skillsIconInfo: SkillIconInfoType = [
   {
@@ -62,6 +84,7 @@ export const skillsIconInfo: SkillIconInfoType = [
     icon: SiJavascript,
     color: "#F7DF1E",
     link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    aliases: ["js"],
   },
 
   // Frameworks and Libraries
@@ -71,6 +94,7 @@ export const skillsIconInfo: SkillIconInfoType = [
     icon: SiReact,
     color: "#61DAFB",
     link: "https://react.dev/",
+    aliases: ["react.js", "reactjs"],
   },
 
   // Styling / UI
@@ -80,6 +104,7 @@ export const skillsIconInfo: SkillIconInfoType = [
     icon: SiTailwindcss,
     color: "#38BDF8",
     link: "https://tailwindcss.com/",
+    aliases: ["Tailwind CSS"],
   },
 
   // States
@@ -98,6 +123,7 @@ export const skillsIconInfo: SkillIconInfoType = [
     icon: SiNodedotjs,
     color: "#339933",
     link: "https://nodejs.org/",
+    aliases: ["nodejs", "node js"],
   },
   {
     name: "Express.js",
@@ -105,6 +131,7 @@ export const skillsIconInfo: SkillIconInfoType = [
     icon: SiExpress,
     // color: "#000000",
     link: "https://expressjs.com/",
+    aliases: ["expressjs"],
   },
   {
     name: "MongoDB",
@@ -135,6 +162,20 @@ export const skillsIconInfo: SkillIconInfoType = [
     link: "https://redis.io/",
   },
   {
+    name: "RabbitMQ",
+    label: "RabbitMQ",
+    icon: SiRabbitmq,
+    color: "#f60",
+    link: "https://www.rabbitmq.com/",
+  },
+  {
+    name: "Swagger Docs",
+    label: "Swagger Docs",
+    icon: SiSwagger,
+    color: "#38b832",
+    link: "https://swagger.io/",
+  },
+  {
     name: "Docker",
     label: "Docker",
     icon: SiDocker,
@@ -147,6 +188,7 @@ export const skillsIconInfo: SkillIconInfoType = [
     icon: SiSequelize,
     color: "#2496ED",
     link: "https://sequelize.org/",
+    aliases: ["Sequelize"],
   },
   {
     name: "Prisma",
@@ -176,20 +218,5 @@ export const skillsIconInfo: SkillIconInfoType = [
     label: "GitHub",
     icon: SiGithub,
     link: "https://github.com/",
-  },
-
-  //Models
-  {
-    name: "chatgpt",
-    label: "Chatgpt",
-    icon: SiChatbot,
-    link: "https://chatgpt.com/",
-  },
-  {
-    name: "gemini",
-    label: "Gemini",
-    icon: SiGooglegemini,
-    color: "#4285F4",
-    link: "https://ai.google.dev/",
   },
 ];

@@ -7,7 +7,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { skillsIconInfo } from "@/data/skills-icon-info";
+import { isSkillMatch, skillsIconInfo } from "@/data/skills-icon-info";
 import { cn } from "@/lib/utils";
 
 export const skillsIcon = (
@@ -16,7 +16,7 @@ export const skillsIcon = (
   gap: number = 5,
 ) => {
   const skillData = skillsIconInfo.filter((skillInfo) =>
-    iconsData.includes(skillInfo.name),
+    iconsData.some((iconName) => isSkillMatch(skillInfo, iconName)),
   );
 
   return (
