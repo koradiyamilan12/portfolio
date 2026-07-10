@@ -16,7 +16,7 @@ export const experienceInfo: ExperienceType[] = [
     role: "Node JS Internship",
     status: "",
     duration: "July 22 2025 - October 22 2025 ",
-    location: "On-site Junagadh",
+    location: "On site Junagadh",
     technologies: [
       "Node.js",
       "Express.js",
@@ -39,7 +39,7 @@ export const experienceInfo: ExperienceType[] = [
     role: "React JS Internship",
     status: "not",
     duration: "April 15 2025 - July 15 2025",
-    location: "On-site Junagadh",
+    location: "On site Junagadh",
     technologies: ["HTML", "CSS", "Tailwind CSS", "JS", "React.js", "Redux"],
     points: [
       "Built responsive and user-friendly web applications using React.js, JavaScript, HTML and CSS.",

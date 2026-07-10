@@ -26,7 +26,7 @@ export const contactFormAction = async (fromData: ContactFormInput) => {
             <p style="color: #444; line-height: 1.6;">${message}</p>
           </div>
           <p style="font-size: 12px; color: #888; margin-top: 30px; text-align: center;">
-            This email was sent from Kunal's portfolio contact form.
+            This email was sent from Milan's portfolio contact form.
           </p>
         </div>
       `,

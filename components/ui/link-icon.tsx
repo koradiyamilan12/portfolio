@@ -17,16 +17,20 @@ export const LinksIcon = () => {
   const LinksInfo = [
     {
       icon: FaGithub,
-      link: "https://github.com/Kunal-Kumar-Soni",
+      link: "https://github.com/koradiyamilan12",
       label: "GitHub",
     },
     {
       icon: FaLinkedin,
-      link: "https://www.linkedin.com/in/kunal-kumar-soni",
+      link: "https://www.linkedin.com/in/milankoradiya",
       label: "LinkedIn",
     },
-    { icon: BsTwitterX, link: "https://x.com/KunalKumar_Soni", label: "X" },
-    { icon: IoMail, link: "mailto:kunalcodes24@gmail.com", label: "Email" },
+    { icon: BsTwitterX, link: "https://x.com/milankoradiya9", label: "X" },
+    {
+      icon: IoMail,
+      link: "mailto:milankoradiya.work@gmail.com",
+      label: "Email",
+    },
   ];
 
   return (

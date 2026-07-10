@@ -7,7 +7,7 @@ import { useTheme } from "next-themes";
 import { Separator } from "../ui/separator";
 
 //Github Username
-const GITHUB_USER_NAME = "Kunal-Kumar-Soni";
+const GITHUB_USER_NAME = "koradiyamilan12";
 
 const GithubActivity = () => {
   const { theme } = useTheme();
