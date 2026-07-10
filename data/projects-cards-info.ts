@@ -11,51 +11,45 @@ export type ProjectsCardInfoType = {
   technologies: string[];
   socialLinks: { label: string; link: string }[];
 };
+
 export const projectsCardInfo: ProjectsCardInfoType[] = [
   {
     id: 1,
-    title: "Dummy Project One",
-    name: "dummy-project-one",
+    title: "ShopNest E-Commerce Platform",
+    name: "shopnest-ecommerce-platform",
+
     description:
-      "Sample project card content used for testing the portfolio layout.",
+      "A production-ready full-stack e-commerce platform featuring secure authentication, PostgreSQL, Redis, Razorpay payments, admin dashboard, and scalable backend architecture.",
 
     image: project,
-    technologies: ["nextjs", "typescript", "tailwind", "firebase", "shadcn"],
-    socialLinks: [
-      {
-        label: "Live Demo",
-        link: "#",
-      },
-      {
-        label: "Github",
-        link: "#",
-      },
-    ],
-  },
-  {
-    id: 2,
-    title: "Dummy Project Two",
-    name: "dummy-project-two",
-    description:
-      "Another placeholder entry for testing the project details experience.",
-    image: project,
+
     technologies: [
-      "nextjs",
-      "typescript",
-      "tailwind",
-      "supabase",
-      "gemini",
-      "shadcn",
+      "react",
+      "vite",
+      "redux-toolkit",
+      "nodejs",
+      "express",
+      "postgresql",
+      "sequelize",
+      "redis",
+      "bullmq",
+      "passportjs",
+      "jwt",
+      "cloudinary",
+      "multer",
+      "razorpay",
+      "swagger",
+      "axios",
     ],
 
     socialLinks: [
       {
         label: "Live Demo",
-        link: "#",
+        link: "https://your-live-demo.com",
       },
       {
         label: "Github",
-        link: "#",
+        link: "https://github.com/yourusername/shopnest-ecommerce-platform",
       },
     ],
   },

@@ -7,100 +7,117 @@ export type ProjectsInfoType = {
   title: string;
   name: string;
   bio: string;
-  projectMeta: { Timeline: string; Role: string; Team: string; Status: string };
+  projectMeta: {
+    Timeline: string;
+    Role: string;
+    Team: string;
+    Status: string;
+  };
   description: string;
   image: StaticImageData | string;
   overview: {
     [key: string]: string[];
   };
-  socialLinks: { liveDemo: string; github: string };
+  socialLinks: {
+    liveDemo: string;
+    github: string;
+  };
 };
+
 export const projectInfos: ProjectsInfoType[] = [
   {
     id: 1,
-    title: "Dummy Project One",
-    name: "dummy-project-one",
-    bio: "Test data placeholder for a sample project detail page.",
+    title: "ShopNest E-Commerce Platform",
+    name: "shopnest-ecommerce-platform",
+
+    bio: "A production-ready full-stack e-commerce platform featuring secure authentication, online payments, background job processing, admin dashboard, and scalable architecture.",
+
     projectMeta: {
-      Timeline: "TBD",
-      Role: "Sample Role",
-      Team: "Test Team",
-      Status: "Draft",
+      Timeline: "2026",
+      Role: "Full Stack Developer",
+      Team: "Solo Project",
+      Status: "Ongoing",
     },
 
     description:
-      "This is dummy test content created for UI preview purposes only. It does not represent a real project.",
-    image: project,
-
-    overview: {
-      "Why This Exists": [
-        "Show how the project detail page looks with sample content.",
-        "Test layout spacing and section rendering.",
-        "Keep the page visually complete without real project data.",
-      ],
-      Features: [
-        "Sample feature list",
-        "Placeholder timeline",
-        "Mock technology badges",
-        "Test CTA buttons",
-      ],
-      "Sample Notes": [
-        "This content is intentionally fictional.",
-        "Replace it later with real project details.",
-      ],
-    },
-    socialLinks: {
-      liveDemo: "#",
-      github: "#",
-    },
-  },
-  {
-    id: 2,
-    title: "Dummy Project Two",
-    name: "dummy-project-two",
-    bio: "Another example of placeholder test data for project pages.",
-
-    projectMeta: {
-      Timeline: "TBD",
-      Role: "Sample Role",
-      Team: "Test Team",
-      Status: "Draft",
-    },
-
-    description:
-      "This is additional dummy data used to verify the detail view. It is not tied to any actual product or service.",
+      "ShopNest is a modern full-stack e-commerce application built with React, Node.js, Express, PostgreSQL, Sequelize, Redis, and BullMQ. The platform provides customers with a seamless shopping experience while offering administrators powerful tools for managing products, orders, users, and analytics. It includes secure JWT authentication, Google OAuth, Razorpay payment integration, Cloudinary image storage, background email processing, Swagger API documentation, and production-ready architecture.",
 
     image: project,
 
     overview: {
-      "Why This Exists": [
-        "Validate the project detail UI with a second example.",
-        "Check how multiple sections appear on the page.",
-        "Keep the portfolio demo functional without real project info.",
+      Overview: [
+        "Built a scalable full-stack e-commerce platform using React, Express.js, PostgreSQL, and Redis.",
+        "Designed with production-ready architecture following clean coding practices.",
+        "Implemented secure authentication, payment gateway, admin dashboard, and background job processing.",
       ],
 
       Features: [
-        "Mock planning flow",
-        "Sample collaboration notes",
-        "Placeholder results section",
+        "JWT Authentication & Authorization",
+        "Google OAuth 2.0 Login",
+        "Product Search & Category Filtering",
+        "Shopping Cart & Wishlist",
+        "Multi-step Checkout Flow",
+        "Razorpay Payment Integration",
+        "Order Tracking & Order History",
+        "Product Reviews & Ratings",
+        "Responsive Admin Dashboard",
+        "Product & Order Management",
+        "User Management",
+        "Sales Analytics Dashboard",
       ],
-      Challenges: [
-        "Testing how bullet lists look in the overview area",
-        "Checking section headings and spacing",
+
+      "Backend Architecture": [
+        "RESTful API using Express.js",
+        "Layered Architecture (Routes, Controllers, Services, Models)",
+        "PostgreSQL with Sequelize ORM",
+        "Redis-powered BullMQ Background Jobs",
+        "Swagger API Documentation",
+        "Centralized Winston Logger",
+        "Cloudinary Image Uploads",
+        "Environment-based Configuration",
       ],
 
       Technologies: [
-        "Next.js",
-        "TypeScript",
-        "Tailwind CSS",
-        "Sample API",
-        "Dummy Library",
+        "React 19",
+        "Redux Toolkit",
+        "Vite",
+        "Node.js",
+        "Express.js",
+        "PostgreSQL",
+        "Sequelize ORM",
+        "Redis",
+        "BullMQ",
+        "Passport.js",
+        "JWT",
+        "Google OAuth",
+        "Cloudinary",
+        "Multer",
+        "Razorpay",
+        "Swagger",
+        "Winston Logger",
+        "Axios",
+      ],
+
+      Challenges: [
+        "Implementing secure authentication with JWT and Google OAuth.",
+        "Managing asynchronous email notifications using BullMQ and Redis.",
+        "Designing scalable database relationships using PostgreSQL and Sequelize.",
+        "Handling payment verification securely with Razorpay webhooks and signatures.",
+        "Building a modular backend architecture suitable for production deployment.",
+      ],
+
+      Achievements: [
+        "Designed a production-ready scalable backend architecture.",
+        "Integrated secure online payment workflow.",
+        "Implemented asynchronous job queues for improved performance.",
+        "Created a responsive admin dashboard with business analytics.",
+        "Documented APIs using Swagger for easier development and testing.",
       ],
     },
 
     socialLinks: {
-      liveDemo: "#",
-      github: "#",
+      liveDemo: "https://shopnest.milankoradiya.in/",
+      github: "https://github.com/koradiyamilan12/shopnest-ecommerce-mern",
     },
   },
 ];
