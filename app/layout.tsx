@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://milankoradiya.in"),
   title: "Milan Koradiya - Full Stack Developer",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/favicon.png",
   },
   description:
     "Milan Koradiya is a Backend-focused Full Stack Developer from India specializing in Node.js, Express, MongoDB, PostgreSQL, and React. Building secure, scalable, and reliable web applications with responsive user interfaces. View portfolio, projects, and technical skills.",
