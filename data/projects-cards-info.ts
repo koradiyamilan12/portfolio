@@ -45,11 +45,11 @@ export const projectsCardInfo: ProjectsCardInfoType[] = [
     socialLinks: [
       {
         label: "Live Demo",
-        link: "https://your-live-demo.com",
+        link: "https://shopnest.milankoradiya.in",
       },
       {
         label: "Github",
-        link: "https://github.com/yourusername/shopnest-ecommerce-platform",
+        link: "https://github.com/koradiyamilan12/shopnest-ecommerce-mern",
       },
     ],
   },
